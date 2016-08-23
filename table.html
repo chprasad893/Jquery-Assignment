@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="table.js"></script>
+  <style>
+   #myTable{
+     margin-left: 15px;
+     margin-top: 20px;
+     /*background-color: #b9c1c5;*/
+   }
+
+table,th,td{
+  height: 40px;
+  border: 1px solid black;
+  width: 350px;
+  text-align: center;
+}
+
+#form{
+background: #c3c3c3;
+/*margin-left: 600px;
+margin-top: -285px;*/
+border: 1px solid black;
+width: 380px;
+}
+
+#form input{
+
+  margin-left: 50px;
+  margin-bottom: 15px;
+  height:30px;
+  width:250px;
+}
+
+#add_row{
+  color: whitesmoke;
+  background-color:#165857 ;
+  border: none;
+}
+
+#add_row:hover{
+  background-color:#146514;
+}
+
+#add_year{
+  margin-top: 15px;
+}
+
+#paging{
+  margin-top: 50px;
+  margin-left: 105px;
+}
+
+#nav{
+  width: 30px;
+  margin-right: 1px;
+  padding-right: 10px;
+  height: 25px;
+}
+
+#remove{
+  background-color:#4d439a;
+  color: whitesmoke;
+  border: none;
+}
+
+#remove:hover{
+  background-color:#ad515a;
+}
+  </style>
+</head>
+
+<body>
+<h1>Chicago Crime Data Tabulation</h1>
+<div id=form>
+  <input type="text" id=add_year placeholder="Year" /></br>
+  <input type="text" id=add_under placeholder="Under $500"/></br>
+  <input type="text" id=add_over placeholder="Over $500"/></br>
+  <input type="button" id=add_row  onclick="addData()" value="Add Data"/>
+</div>
+<div >
+  <table id="myTable" >
+
+  </table>
+</div>
+
+<div id="paging">
+</div>
+
+
+
+</body>
+</html>
